@@ -11,11 +11,17 @@ struct ContentView: View {
     var body: some View {
         
             TabView {
-                MainView()
-                    .tabItem {
-                        Image(.main)
-                        Text("Главная")
-                    }
+                CustomNavView {
+                    MainView()
+                }
+                .navigationTitle("Педиатры")
+
+                .tabItem {
+                    Image(.main)
+                    Text("Главная")
+                }
+                .background(.docLightgray)
+                
                 CalendarView()
                     .tabItem {
                         Image(.calendar)
@@ -33,6 +39,8 @@ struct ContentView: View {
                     }
             }
             .accentColor(.docPink)
+            .foregroundColor(.docWhite)
+            .background(Color.docWhite)
         }
 }
 
