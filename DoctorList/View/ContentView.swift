@@ -4,11 +4,7 @@ struct ContentView: View {
     var body: some View {
         
             TabView {
-                CustomNavView {
-                    MainView(viewModel: .prewiev)
-                }
-                .navigationTitle("Педиатры")
-
+                MainView(viewModel: .prewiev)
                 .tabItem {
                     Image(.main)
                     Text("Главная")
