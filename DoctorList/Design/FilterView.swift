@@ -2,27 +2,27 @@ import SwiftUI
 
 struct FilterView: View {
     
-    @Binding var currentSorted: Int
+    @Binding var currentSorted: DoctorSort
     
     var body: some View {
         HStack {
-            ForEach(DoctorSort.allCases.indices, id: \.self) { index in
+            ForEach(DoctorSort.allCases, id: \.self) { sorted in
                 Button(action: {
-                    currentSorted = index
+                    currentSorted = sorted
                 }, label: {
                     HStack{
                         Spacer()
-                        Text(DoctorSort.allCases[index].name)
+                        Text(sorted.name)
                             .font(.sub2)
-                        if index == currentSorted {
+                        if sorted == currentSorted {
                             Image(.vector)
                         }
                         Spacer()
                     }
                 })
-                .foregroundColor(index == currentSorted ? .docWhite : .docDarkgray)
+                .foregroundColor(sorted == currentSorted ? .docWhite : .docDarkgray)
                 .padding(.vertical, 7)
-                .background(index == currentSorted ? .docPink : .docWhite)
+                .background(sorted == currentSorted ? .docPink : .docWhite)
                 .overlay {
                     RoundedRectangle(cornerRadius: 0)
                         .stroke(.docGrey, lineWidth: 1)
@@ -38,6 +38,7 @@ struct FilterView: View {
     }
 }
 
-//#Preview {
-//    FilterView(currentSorted: 0)
-//}
+#Preview {
+    @State var sorted: DoctorSort = .price
+    return FilterView(currentSorted: $sorted)
+}

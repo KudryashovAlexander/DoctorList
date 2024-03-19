@@ -3,8 +3,6 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var viewModel: MainViewModel
-    @State private var searchText = ""
-    @State private var sorted = 0
     
     init(viewModel: MainViewModel) {
         self.viewModel = viewModel
@@ -13,12 +11,12 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 24) {
-                FilterView(currentSorted: $sorted)
+                FilterView(currentSorted: $viewModel.sorted)
                     .padding(.horizontal)
                 ScrollView {
                     VStack(spacing: 16) {
-                        ForEach(viewModel.models.indices, id:\.self) { index in
-                            DoctorShotView(doctorModel: viewModel.models[index]) {
+                        ForEach(viewModel.sortedModels.indices, id:\.self) { index in
+                            DoctorShotView(doctorModel: viewModel.sortedModels[index]) {
                                 print("Выбран \(index)")
                             }
                             .background(Color.docWhite)
@@ -34,7 +32,7 @@ struct MainView: View {
                 }
             }
             .background(Color.docLightgray)
-            .searchable(text: $searchText) {
+            .searchable(text: $viewModel.searchText) {
                 
             }
             .toolbarTitleDisplayMode(.inline)
