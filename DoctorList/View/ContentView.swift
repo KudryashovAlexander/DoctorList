@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  DoctorList
-//
-//  Created by Александр Кудряшов on 18.03.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -12,7 +5,7 @@ struct ContentView: View {
         
             TabView {
                 CustomNavView {
-                    MainView()
+                    MainView(viewModel: .prewiev)
                 }
                 .navigationTitle("Педиатры")
 

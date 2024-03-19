@@ -23,6 +23,7 @@ struct DoctorShotView: View {
         }
         .padding(16)
         .frame(maxWidth: .infinity)
+        .background(Color.docWhite)
     }
     
     private var doctorAvatar: some View {
@@ -45,7 +46,7 @@ struct DoctorShotView: View {
     
     private var doctorInformation: some View {
         VStack(alignment:.leading, spacing: 8) {
-            VStack(alignment:.leading) {
+            VStack(alignment:.leading, spacing: 8) {
                 Text(doctorModel.lastName)
                 Text(doctorModel.firstName + " " + doctorModel.patronymic)
             }
@@ -77,17 +78,8 @@ struct DoctorShotView: View {
     }
     
     private var button: some View {
-        Button(action: {
-            if doctorModel.isFree { handler() }
-        }, label: {
-            Text(doctorModel.isFree ? "Записаться" : "Нет свободного расписания")
-                .font(.h4)
-        })
-        .frame(maxWidth: .infinity)
-        .frame(height: 47)
-        .foregroundColor(.docWhite)
-        .background(doctorModel.isFree ? Color.docPink : Color.gray)
-        .cornerRadius(8)
+        SignUpButton(isFree: doctorModel.isFree,
+                     completion: handler)
     }
     
     private func getSpecialization() -> String {
