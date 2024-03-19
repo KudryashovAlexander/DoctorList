@@ -18,6 +18,7 @@ struct MainView: View {
                         ForEach(viewModel.sortedModels.indices, id:\.self) { index in
                             DoctorShotView(doctorModel: viewModel.sortedModels[index]) {
                                 print("Выбран \(index)")
+                                // код для перехода между экранами
                             }
                             .background(Color.docWhite)
                             .cornerRadius(8)
@@ -32,21 +33,11 @@ struct MainView: View {
                 }
             }
             .background(Color.docLightgray)
-            .searchable(text: $viewModel.searchText) {
-                
-            }
-            .toolbarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    VStack {
-                        Text("Педиатры")
-                            .font(.h3)
-                            .foregroundColor(Color.black)
-                    }
-                }
+            .searchable(text: $viewModel.searchText)
+            .modifyNavigation(title: "Педиатры") {
+                print("Нажата кнопка назад на главном экране")
             }
         }
-
     }
 }
 

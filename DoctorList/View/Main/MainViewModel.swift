@@ -5,6 +5,7 @@ class MainViewModel: ObservableObject {
     @Published var searchText: String = ""
     @Published var sorted: DoctorSort = .price
     private let allmodels: [DoctorShotUIModel]
+    private let doctorService: DoctorService
     
     var filterModels: [DoctorShotUIModel] {
         guard !searchText.isEmpty else {
@@ -30,6 +31,8 @@ class MainViewModel: ObservableObject {
          isCompleted: Bool = false) {
         self.allmodels = allmodels
         self.isCompleted = isCompleted
+        self.doctorService = DoctorService()
+        doctorService.fetchDoctors()
     }
     
     static let prewiev = MainViewModel(allmodels: DoctorShotUIModel.examples,

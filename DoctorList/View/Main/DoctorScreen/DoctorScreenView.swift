@@ -6,19 +6,23 @@ struct DoctorScreenView: View {
     let model: DoctorUIModel
     
     var body: some View {
-        VStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    names
-                    properties
-                    priceAndComment
-                    
+        NavigationView {
+            VStack {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 20) {
+                        names
+                        properties
+                        priceAndComment
+                    }
                 }
+                button
             }
-            button
+            .padding()
+            .background(Color.docLightgray)
+            .modifyNavigation(title: model.specialization) {
+                print("Нажата кнопка назад на главном экране")
+            }
         }
-        .padding()
-        .background(Color.docLightgray)
     }
     
     var names: some View {

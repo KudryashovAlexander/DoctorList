@@ -20,6 +20,13 @@
 		7F130AD42BA9AA740028CA99 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD32BA9AA740028CA99 /* MainViewModel.swift */; };
 		7F130AD62BA9AADC0028CA99 /* DoctorSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD52BA9AADC0028CA99 /* DoctorSort.swift */; };
 		7F130AD82BA9C8A00028CA99 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD72BA9C8A00028CA99 /* FilterView.swift */; };
+		7F130ADA2BA9F43A0028CA99 /* NavigationTitleModify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD92BA9F43A0028CA99 /* NavigationTitleModify.swift */; };
+		7F130ADE2BAA0D570028CA99 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ADD2BAA0D570028CA99 /* Models.swift */; };
+		7F130AE02BAA10BF0028CA99 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ADF2BAA10BF0028CA99 /* NetworkClient.swift */; };
+		7F130AE22BAA10E50028CA99 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE12BAA10E50028CA99 /* NetworkClientError.swift */; };
+		7F130AE42BAA11330028CA99 /* NetworkErrorDescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE32BAA11330028CA99 /* NetworkErrorDescriptionModel.swift */; };
+		7F130AE62BAA11610028CA99 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE52BAA11610028CA99 /* Endpoint.swift */; };
+		7F130AE82BAA11A40028CA99 /* DoctorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE72BAA11A40028CA99 /* DoctorService.swift */; };
 		7F5B89002BA8442D00563979 /* DoctorListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B88FF2BA8442D00563979 /* DoctorListApp.swift */; };
 		7F5B89022BA8442D00563979 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89012BA8442D00563979 /* ContentView.swift */; };
 		7F5B89042BA8442E00563979 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B89032BA8442E00563979 /* Icon.xcassets */; };
@@ -50,6 +57,13 @@
 		7F130AD32BA9AA740028CA99 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		7F130AD52BA9AADC0028CA99 /* DoctorSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSort.swift; sourceTree = "<group>"; };
 		7F130AD72BA9C8A00028CA99 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		7F130AD92BA9F43A0028CA99 /* NavigationTitleModify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleModify.swift; sourceTree = "<group>"; };
+		7F130ADD2BAA0D570028CA99 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7F130ADF2BAA10BF0028CA99 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		7F130AE12BAA10E50028CA99 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
+		7F130AE32BAA11330028CA99 /* NetworkErrorDescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorDescriptionModel.swift; sourceTree = "<group>"; };
+		7F130AE52BAA11610028CA99 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7F130AE72BAA11A40028CA99 /* DoctorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorService.swift; sourceTree = "<group>"; };
 		7F5B88FC2BA8442D00563979 /* DoctorList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5B88FF2BA8442D00563979 /* DoctorListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListApp.swift; sourceTree = "<group>"; };
 		7F5B89012BA8442D00563979 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +145,27 @@
 			path = DoctorScreen;
 			sourceTree = "<group>";
 		};
+		7F130ADB2BAA0C500028CA99 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F130ADC2BAA0C6B0028CA99 /* model */,
+				7F130AE52BAA11610028CA99 /* Endpoint.swift */,
+				7F130ADF2BAA10BF0028CA99 /* NetworkClient.swift */,
+				7F130AE12BAA10E50028CA99 /* NetworkClientError.swift */,
+				7F130AE32BAA11330028CA99 /* NetworkErrorDescriptionModel.swift */,
+				7F130AE72BAA11A40028CA99 /* DoctorService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7F130ADC2BAA0C6B0028CA99 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7F130ADD2BAA0D570028CA99 /* Models.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		7F5B88F32BA8442D00563979 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +238,7 @@
 		7F5B89102BA8446800563979 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7F130ADB2BAA0C500028CA99 /* Network */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -222,6 +258,7 @@
 				7F130ABF2BA970170028CA99 /* DoctorPropertyView.swift */,
 				7F130ACE2BA9A10A0028CA99 /* SignUpButton.swift */,
 				7F130AD72BA9C8A00028CA99 /* FilterView.swift */,
+				7F130AD92BA9F43A0028CA99 /* NavigationTitleModify.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -304,17 +341,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5B89212BA85B1C00563979 /* ProfileView.swift in Sources */,
+				7F130ADE2BAA0D570028CA99 /* Models.swift in Sources */,
+				7F130AE22BAA10E50028CA99 /* NetworkClientError.swift in Sources */,
 				7F5B89252BA884EB00563979 /* CustomNavBarContainerView.swift in Sources */,
 				7F5B89122BA8458800563979 /* DoctorShotUIModel.swift in Sources */,
 				7F5B89292BA89C6200563979 /* RatingView.swift in Sources */,
+				7F130AE42BAA11330028CA99 /* NetworkErrorDescriptionModel.swift in Sources */,
 				7F130AD82BA9C8A00028CA99 /* FilterView.swift in Sources */,
 				7F5B89232BA87D2D00563979 /* AppNavBarView.swift in Sources */,
 				7F130AC22BA97D8D0028CA99 /* DoctorPropertyUIModel.swift in Sources */,
 				7F130AB92BA8A7590028CA99 /* DoctorShotView.swift in Sources */,
 				7F130AD22BA9A2B30028CA99 /* DoctorScreenView.swift in Sources */,
+				7F130AE62BAA11610028CA99 /* Endpoint.swift in Sources */,
+				7F130ADA2BA9F43A0028CA99 /* NavigationTitleModify.swift in Sources */,
 				7F5B89022BA8442D00563979 /* ContentView.swift in Sources */,
 				7F5B891D2BA85B0300563979 /* CalendarView.swift in Sources */,
+				7F130AE82BAA11A40028CA99 /* DoctorService.swift in Sources */,
 				7F130ABE2BA96B240028CA99 /* PriceView.swift in Sources */,
+				7F130AE02BAA10BF0028CA99 /* NetworkClient.swift in Sources */,
 				7F130AC42BA97FDE0028CA99 /* PriceUIModel.swift in Sources */,
 				7F130AC02BA970170028CA99 /* DoctorPropertyView.swift in Sources */,
 				7F5B89002BA8442D00563979 /* DoctorListApp.swift in Sources */,
