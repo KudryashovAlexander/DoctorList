@@ -1,6 +1,7 @@
 import Foundation
 
 enum Endpoint {
+    
     case main
     
     static var baseURL: URL {

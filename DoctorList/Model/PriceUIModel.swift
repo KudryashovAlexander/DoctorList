@@ -13,5 +13,4 @@ struct PriceUIModel {
     
     static let example = PriceUIModel(type:.chat,
                                       price: 600)
-    
 }

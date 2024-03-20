@@ -29,7 +29,6 @@ struct MainView: View {
                                     }
                                     .padding(.horizontal)
                                     .onTapGesture {
-                                        //переход на след экран
                                         let id = viewModel.sortedModels[index].id
                                         let user = viewModel.getUser(id: id)
                                         coordinator.push(.doctor, user: user)

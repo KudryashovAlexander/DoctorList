@@ -8,8 +8,7 @@ class Coordinator: ObservableObject {
     private var viewModel: MainViewModel
     private var currentUser: User?
     
-    init(doctorService: DoctorService = DoctorService())
-    {
+    init(doctorService: DoctorService = DoctorService()) {
         self.doctorService = doctorService
         self.viewModel = MainViewModel(doctorService: doctorService)
     }

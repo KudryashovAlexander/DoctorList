@@ -85,7 +85,6 @@ struct DoctorScreenView: View {
     private var button: some View {
         SignUpButton(isFree: model.isFree) {
             print("Press записаться")
-            // переход на след экран
         }
     }
 }

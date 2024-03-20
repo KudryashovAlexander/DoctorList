@@ -44,26 +44,21 @@ class ConverterNetworkModel {
     }
     
     static func getPrices(networkModel: User) -> PricesUIModel {
-        var pricesUIModel = PricesUIModel()
         
+        var pricesUIModel = PricesUIModel()
         if networkModel.textChatPrice != 0 {
             pricesUIModel.chat = PriceUIModel(type: .chat, price: networkModel.textChatPrice)
         }
-        
         if networkModel.videoChatPrice != 0 {
             pricesUIModel.video = PriceUIModel(type: .video, price: networkModel.videoChatPrice)
         }
-        
         if networkModel.homePrice != 0 {
             pricesUIModel.home = PriceUIModel(type: .home, price: networkModel.homePrice)
         }
-        
         if networkModel.hospitalPrice != 0 {
             pricesUIModel.hospital = PriceUIModel(type: .hospital, price: networkModel.hospitalPrice)
         }
-        
         return pricesUIModel
     }
-    
     
 }

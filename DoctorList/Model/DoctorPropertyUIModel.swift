@@ -20,7 +20,8 @@ struct DoctorPropertyUIModel {
         self.experience = netWorkModel.seniority
         self.specificDegree = netWorkModel.scientificDegreeLabel
         self.university = ConverterNetworkModel.getEducation(educationTypeLabel: netWorkModel.educationTypeLabel,
-                                                             higherEducation: netWorkModel.higherEducation, advancedTraining: netWorkModel.advancedTraining)
+                                                             higherEducation: netWorkModel.higherEducation,
+                                                             advancedTraining: netWorkModel.advancedTraining)
         self.workExpirience = ConverterNetworkModel.getWorkExpirience(worksExpirience: netWorkModel.workExpirience)
         
     }

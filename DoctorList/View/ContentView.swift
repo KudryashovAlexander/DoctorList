@@ -3,14 +3,12 @@ import SwiftUI
 struct ContentView: View {
         
     var body: some View {
-        
             TabView {
                 CoordinatorView()
                 .tabItem {
                     Image(.main)
                     Text("Главная")
                 }
-                .background(.docLightgray)
                 
                 CalendarView()
                     .tabItem {
@@ -29,8 +27,9 @@ struct ContentView: View {
                     }
             }
             .accentColor(.docPink)
-            .foregroundColor(.docWhite)
-            .background(Color.docWhite)
+            .onAppear() {
+                UITabBar.appearance().backgroundColor = .docWhite
+            }
         }
 }
 
