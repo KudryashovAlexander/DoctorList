@@ -18,21 +18,21 @@ struct MainView: View {
                     ScrollView {
                         VStack(spacing: 16) {
                             ForEach(viewModel.sortedModels.indices, id:\.self) { index in
-                                    DoctorShotView(doctorModel: viewModel.sortedModels[index]) {
-                                        print("Выбран \(index)")
-                                    }
-                                    .background(Color.docWhite)
-                                    .cornerRadius(8)
-                                    .overlay {
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .stroke(.docGrey, lineWidth: 1)
-                                    }
-                                    .padding(.horizontal)
-                                    .onTapGesture {
-                                        let id = viewModel.sortedModels[index].id
-                                        let user = viewModel.getUser(id: id)
-                                        coordinator.push(.doctor, user: user)
-                                    }
+                                DoctorShotView(doctorModel: viewModel.sortedModels[index]) {
+                                    print("Выбран \(index)")
+                                }
+                                .background(Color.docWhite)
+                                .cornerRadius(8)
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke(.docGrey, lineWidth: 1)
+                                }
+                                .padding(.horizontal)
+                                .onTapGesture {
+                                    let id = viewModel.sortedModels[index].id
+                                    let user = viewModel.getUser(id: id)
+                                    coordinator.push(.doctor, user: user)
+                                }
                             }
                         }
                     }
@@ -48,6 +48,7 @@ struct MainView: View {
             ProgressView()
         }
     }
+    
 }
 
 #Preview {

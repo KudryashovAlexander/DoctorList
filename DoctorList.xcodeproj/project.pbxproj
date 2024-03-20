@@ -103,8 +103,8 @@
 		7F130AC52BA980E20028CA99 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7F5B891A2BA85AF600563979 /* MainView.swift */,
 				7F130AD32BA9AA740028CA99 /* MainViewModel.swift */,
+				7F5B891A2BA85AF600563979 /* MainView.swift */,
 				7F130AB82BA8A7590028CA99 /* DoctorShotView.swift */,
 				7F130AD02BA9A2890028CA99 /* DoctorScreen */,
 				7F130AC92BA981470028CA99 /* PriceScreen */,
