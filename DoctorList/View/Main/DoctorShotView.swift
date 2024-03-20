@@ -1,4 +1,3 @@
-import Kingfisher
 import SwiftUI
 
 struct DoctorShotView: View {
@@ -27,29 +26,16 @@ struct DoctorShotView: View {
     }
     
     private var doctorAvatar: some View {
-        VStack {
-            if let urlString = doctorModel.avatarStringURL,
-               let url = URL(string: urlString) {
-                KFImage.url(url)
-                    .resizable()
-                    .placeholder {
-                        Image(systemName: "person.circle")
-                            .font(.largeTitle)
-                            .foregroundColor(.docDarkgray)
-                    }
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipped()
-                    .cornerRadius(25)
-            }
-        }
+        AvatarView(urlString: doctorModel.avatarStringURL)
     }
     
     private var doctorInformation: some View {
         VStack(alignment:.leading, spacing: 8) {
             VStack(alignment:.leading, spacing: 8) {
                 Text(doctorModel.lastName)
+                    .multilineTextAlignment(.leading)
                 Text(doctorModel.firstName + " " + doctorModel.patronymic)
+                    .multilineTextAlignment(.leading)
             }
             .font(.h4)
             .foregroundColor(.docBlack)
@@ -62,6 +48,7 @@ struct DoctorShotView: View {
             Text(getSpecialization())
                 .font(.sub2)
                 .foregroundColor(.docDarkgray)
+                .multilineTextAlignment(.leading)
             
             Text("от \(doctorModel.minPrice) ₽")
                 .font(.h4)

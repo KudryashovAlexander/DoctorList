@@ -7,7 +7,6 @@ struct NavigationTitleModify: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-        
             .toolbarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigation) {
@@ -17,8 +16,6 @@ struct NavigationTitleModify: ViewModifier {
                             backAction()
                         }
                 }
-            }
-            .toolbar{
                 ToolbarItem(placement: .principal) {
                     VStack {
                         Text(title)
@@ -26,7 +23,6 @@ struct NavigationTitleModify: ViewModifier {
                             .foregroundColor(Color.black)
                     }
                 }
-
             }
     }
 }

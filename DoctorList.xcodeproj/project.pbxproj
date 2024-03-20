@@ -30,6 +30,9 @@
 		7F130AEA2BAAB6D60028CA99 /* ConverterNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE92BAAB6D60028CA99 /* ConverterNetworkModel.swift */; };
 		7F130AEE2BAAD7A20028CA99 /* PriceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AED2BAAD7A20028CA99 /* PriceType.swift */; };
 		7F130AF02BAADBA60028CA99 /* PricesUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AEF2BAADBA60028CA99 /* PricesUIModel.swift */; };
+		7F130AF22BAAF5DB0028CA99 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AF12BAAF5DB0028CA99 /* AvatarView.swift */; };
+		7F130AF42BAB17CC0028CA99 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AF32BAB17CC0028CA99 /* Coordinator.swift */; };
+		7F130AF62BAB24CF0028CA99 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AF52BAB24CF0028CA99 /* CoordinatorView.swift */; };
 		7F5B89002BA8442D00563979 /* DoctorListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B88FF2BA8442D00563979 /* DoctorListApp.swift */; };
 		7F5B89022BA8442D00563979 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89012BA8442D00563979 /* ContentView.swift */; };
 		7F5B89042BA8442E00563979 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B89032BA8442E00563979 /* Icon.xcassets */; };
@@ -41,9 +44,6 @@
 		7F5B891D2BA85B0300563979 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B891C2BA85B0300563979 /* CalendarView.swift */; };
 		7F5B891F2BA85B0C00563979 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B891E2BA85B0C00563979 /* ChatView.swift */; };
 		7F5B89212BA85B1C00563979 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89202BA85B1C00563979 /* ProfileView.swift */; };
-		7F5B89232BA87D2D00563979 /* AppNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89222BA87D2D00563979 /* AppNavBarView.swift */; };
-		7F5B89252BA884EB00563979 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89242BA884EB00563979 /* CustomNavBarContainerView.swift */; };
-		7F5B89272BA88A3F00563979 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89262BA88A3F00563979 /* CustomNavView.swift */; };
 		7F5B89292BA89C6200563979 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89282BA89C6200563979 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +70,9 @@
 		7F130AE92BAAB6D60028CA99 /* ConverterNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterNetworkModel.swift; sourceTree = "<group>"; };
 		7F130AED2BAAD7A20028CA99 /* PriceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceType.swift; sourceTree = "<group>"; };
 		7F130AEF2BAADBA60028CA99 /* PricesUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesUIModel.swift; sourceTree = "<group>"; };
+		7F130AF12BAAF5DB0028CA99 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		7F130AF32BAB17CC0028CA99 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7F130AF52BAB24CF0028CA99 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 		7F5B88FC2BA8442D00563979 /* DoctorList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5B88FF2BA8442D00563979 /* DoctorListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListApp.swift; sourceTree = "<group>"; };
 		7F5B89012BA8442D00563979 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,9 +85,6 @@
 		7F5B891C2BA85B0300563979 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		7F5B891E2BA85B0C00563979 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7F5B89202BA85B1C00563979 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		7F5B89222BA87D2D00563979 /* AppNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBarView.swift; sourceTree = "<group>"; };
-		7F5B89242BA884EB00563979 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
-		7F5B89262BA88A3F00563979 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
 		7F5B89282BA89C6200563979 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +105,7 @@
 			children = (
 				7F5B891A2BA85AF600563979 /* MainView.swift */,
 				7F130AD32BA9AA740028CA99 /* MainViewModel.swift */,
+				7F130AB82BA8A7590028CA99 /* DoctorShotView.swift */,
 				7F130AD02BA9A2890028CA99 /* DoctorScreen */,
 				7F130AC92BA981470028CA99 /* PriceScreen */,
 			);
@@ -147,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				7F130AD12BA9A2B30028CA99 /* DoctorScreenView.swift */,
+				7F130ABF2BA970170028CA99 /* DoctorPropertyView.swift */,
 			);
 			path = DoctorScreen;
 			sourceTree = "<group>";
@@ -235,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				7F5B89012BA8442D00563979 /* ContentView.swift */,
+				7F130AF32BAB17CC0028CA99 /* Coordinator.swift */,
+				7F130AF52BAB24CF0028CA99 /* CoordinatorView.swift */,
 				7F130AC52BA980E20028CA99 /* Main */,
 				7F130AC62BA980EB0028CA99 /* Calendar */,
 				7F130AC72BA980F30028CA99 /* Chat */,
@@ -258,16 +262,12 @@
 				7F5B89032BA8442E00563979 /* Icon.xcassets */,
 				7F5B89142BA84C6A00563979 /* Color.xcassets */,
 				7F5B89162BA8516300563979 /* Font_ext..swift */,
-				7F5B89222BA87D2D00563979 /* AppNavBarView.swift */,
-				7F5B89242BA884EB00563979 /* CustomNavBarContainerView.swift */,
-				7F5B89262BA88A3F00563979 /* CustomNavView.swift */,
 				7F5B89282BA89C6200563979 /* RatingView.swift */,
 				7F130ABD2BA96B240028CA99 /* PriceView.swift */,
-				7F130AB82BA8A7590028CA99 /* DoctorShotView.swift */,
-				7F130ABF2BA970170028CA99 /* DoctorPropertyView.swift */,
 				7F130ACE2BA9A10A0028CA99 /* SignUpButton.swift */,
 				7F130AD72BA9C8A00028CA99 /* FilterView.swift */,
 				7F130AD92BA9F43A0028CA99 /* NavigationTitleModify.swift */,
+				7F130AF12BAAF5DB0028CA99 /* AvatarView.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -353,12 +353,10 @@
 				7F130AF02BAADBA60028CA99 /* PricesUIModel.swift in Sources */,
 				7F130ADE2BAA0D570028CA99 /* Models.swift in Sources */,
 				7F130AE22BAA10E50028CA99 /* NetworkClientError.swift in Sources */,
-				7F5B89252BA884EB00563979 /* CustomNavBarContainerView.swift in Sources */,
 				7F5B89122BA8458800563979 /* DoctorShotUIModel.swift in Sources */,
 				7F5B89292BA89C6200563979 /* RatingView.swift in Sources */,
 				7F130AE42BAA11330028CA99 /* NetworkErrorDescriptionModel.swift in Sources */,
 				7F130AD82BA9C8A00028CA99 /* FilterView.swift in Sources */,
-				7F5B89232BA87D2D00563979 /* AppNavBarView.swift in Sources */,
 				7F130AEA2BAAB6D60028CA99 /* ConverterNetworkModel.swift in Sources */,
 				7F130AC22BA97D8D0028CA99 /* DoctorPropertyUIModel.swift in Sources */,
 				7F130AB92BA8A7590028CA99 /* DoctorShotView.swift in Sources */,
@@ -368,10 +366,13 @@
 				7F130AEE2BAAD7A20028CA99 /* PriceType.swift in Sources */,
 				7F5B89022BA8442D00563979 /* ContentView.swift in Sources */,
 				7F5B891D2BA85B0300563979 /* CalendarView.swift in Sources */,
+				7F130AF42BAB17CC0028CA99 /* Coordinator.swift in Sources */,
 				7F130AE82BAA11A40028CA99 /* DoctorService.swift in Sources */,
 				7F130ABE2BA96B240028CA99 /* PriceView.swift in Sources */,
 				7F130AE02BAA10BF0028CA99 /* NetworkClient.swift in Sources */,
+				7F130AF62BAB24CF0028CA99 /* CoordinatorView.swift in Sources */,
 				7F130AC42BA97FDE0028CA99 /* PriceUIModel.swift in Sources */,
+				7F130AF22BAAF5DB0028CA99 /* AvatarView.swift in Sources */,
 				7F130AC02BA970170028CA99 /* DoctorPropertyView.swift in Sources */,
 				7F5B89002BA8442D00563979 /* DoctorListApp.swift in Sources */,
 				7F130ACD2BA99F380028CA99 /* DoctorUIModel.swift in Sources */,
@@ -379,7 +380,6 @@
 				7F130ACB2BA981AF0028CA99 /* PriceScreenView.swift in Sources */,
 				7F5B891B2BA85AF600563979 /* MainView.swift in Sources */,
 				7F130AD62BA9AADC0028CA99 /* DoctorSort.swift in Sources */,
-				7F5B89272BA88A3F00563979 /* CustomNavView.swift in Sources */,
 				7F5B89172BA8516300563979 /* Font_ext..swift in Sources */,
 				7F130ACF2BA9A10A0028CA99 /* SignUpButton.swift in Sources */,
 				7F130AD42BA9AA740028CA99 /* MainViewModel.swift in Sources */,

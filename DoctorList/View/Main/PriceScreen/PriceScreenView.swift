@@ -2,6 +2,7 @@ import SwiftUI
 
 struct PriceScreenView: View {
     
+    @EnvironmentObject private var coordinator: Coordinator
     let model: PricesUIModel
     
     var body: some View {
@@ -26,9 +27,9 @@ struct PriceScreenView: View {
             }
             .background(Color.docLightgray)
             .modifyNavigation(title: "Стоимость услуг") {
-                print("Нажата кнопка назад")
+                coordinator.pop()
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

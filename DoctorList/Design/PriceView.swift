@@ -9,10 +9,11 @@ struct PriceView: View {
     
     var body: some View {
         VStack(alignment:.leading, spacing: 12) {
-            if let name = model.name {
-                Text(name)
-                    .font(.h4)
-            }
+            
+            Text(model.name)
+                .font(.h4)
+                .foregroundColor(.docBlack)
+            
             HStack {
                 Text(model.comment)
                     .font(.sub1)
@@ -20,6 +21,7 @@ struct PriceView: View {
                 Text("\(model.price) ₽")
                     .font(.h4)
             }
+            .foregroundColor(.docBlack)
             .padding(.horizontal, 16)
             .frame(height: 57)
             .background(Color.docWhite)

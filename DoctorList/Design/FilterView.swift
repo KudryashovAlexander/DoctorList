@@ -8,7 +8,9 @@ struct FilterView: View {
         HStack {
             ForEach(DoctorSort.allCases, id: \.self) { sorted in
                 Button(action: {
-                    currentSorted = sorted
+                    withAnimation {
+                        currentSorted = sorted
+                    }
                 }, label: {
                     HStack{
                         Spacer()

@@ -1,6 +1,7 @@
 import Foundation
 
 struct DoctorShotUIModel {
+    let id: String
     let firstName: String
     let lastName: String
     let patronymic: String
@@ -13,7 +14,8 @@ struct DoctorShotUIModel {
     let minPrice: Int
     let isFree: Bool
     
-    init(firstName: String,
+    init(id: String,
+         firstName: String,
          lastName: String,
          patronymic: String,
          avatarStringURL: String?,
@@ -23,6 +25,7 @@ struct DoctorShotUIModel {
          experience: Int,
          minPrice: Int,
          isFree: Bool) {
+        self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.patronymic = patronymic
@@ -36,6 +39,7 @@ struct DoctorShotUIModel {
     }
     
     init(networkModel: User) {
+        self.id = networkModel.id
         self.firstName = networkModel.firstName
         self.lastName = networkModel.lastName
         self.patronymic = networkModel.patronymic
@@ -54,7 +58,8 @@ struct DoctorShotUIModel {
     
 
     
-    static let example = DoctorShotUIModel(firstName: "Кирилл",
+    static let example = DoctorShotUIModel(id: "1",
+                                           firstName: "Кирилл",
                                            lastName: "Осташков",
                                            patronymic: "Вячеславович",
                                            avatarStringURL: "https://s3-alpha-sig.figma.com/img/5f49/2534/33f57cd84e006f761451a94ae688c02a?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jHUtiZW4jlshY4jSqpQCqmlO4h9UP04gixNU5G2~KjMdyQnO~H7OFYw41gokiVRIoEVYk-CmmrxLbstDCudXJGMq4wC7lnz9080g1T51hsXlnEdY9em-O7dTYt8STvcqQ1vd6RA1U0TDj0bdhh9kWQvcQuOAIYiGEabWy0D8H~7WoeMeNXWiayzuJluJOnxPWYgZYb4yZbD9UKNF1MbfL7BuJOJfkoQy3pO9HSz6tP5TWXePOA~wnURcbDi2~YqRNYYvlZjrIQR-nGYxRpVMkKMUurc8-xo7dY5--ugH1eGgzMjYt2b3kfEX1K9JN4qJcbfU3z88ijeu5p3SjKQGDw__",
@@ -65,7 +70,8 @@ struct DoctorShotUIModel {
                                            minPrice: 600,
                                            isFree: true)
     
-    static let examples: [DoctorShotUIModel] = [DoctorShotUIModel(firstName: "Кирилл",
+    static let examples: [DoctorShotUIModel] = [DoctorShotUIModel(id: "2",
+                                                                  firstName: "Кирилл",
                                                                   lastName: "Осташков",
                                                                   patronymic: "Вячеславович",
                                                                   avatarStringURL: "https://s3-alpha-sig.figma.com/img/5f49/2534/33f57cd84e006f761451a94ae688c02a?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jHUtiZW4jlshY4jSqpQCqmlO4h9UP04gixNU5G2~KjMdyQnO~H7OFYw41gokiVRIoEVYk-CmmrxLbstDCudXJGMq4wC7lnz9080g1T51hsXlnEdY9em-O7dTYt8STvcqQ1vd6RA1U0TDj0bdhh9kWQvcQuOAIYiGEabWy0D8H~7WoeMeNXWiayzuJluJOnxPWYgZYb4yZbD9UKNF1MbfL7BuJOJfkoQy3pO9HSz6tP5TWXePOA~wnURcbDi2~YqRNYYvlZjrIQR-nGYxRpVMkKMUurc8-xo7dY5--ugH1eGgzMjYt2b3kfEX1K9JN4qJcbfU3z88ijeu5p3SjKQGDw__",
@@ -75,7 +81,8 @@ struct DoctorShotUIModel {
                                                                   experience: 10,
                                                                   minPrice: 600,
                                                                   isFree: true),
-                                                DoctorShotUIModel(firstName: "Дарья",
+                                                DoctorShotUIModel(id:"3",
+                                                                  firstName: "Дарья",
                                                                   lastName: "Семенова",
                                                                   patronymic: "Сергеевна",
                                                                   avatarStringURL: "https://s3-alpha-sig.figma.com/img/db3a/25c5/e8059ddc791569ce8ae2d2b6fe1929c7?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CC1OkwW0RRowzXNL1KYZ9bp9FRKp901gQFTbVLmM5Zq0VzkbucJTLauWjzXuyLPosmaOxaIe3K1ghzlMakdiiaTRZSU8PL-ghU~TA95OLBVe1JNS6KmvIZns6zrHYs~kEx2NZ6OqwgORAkuwHSg3GBTEns-9UNQYtxLqUVDRF9XsMR-P4fuOt1dPuV9T4Fvm8mDN6CsUZF4HghUPNafz6Gd7wAGVveiUQTPyEnt2qvD7B6IH76uE18RraYJxIsWIFhq7BDBG6xRvQbN7qTXbYN~APwkGswccZFq6aYDJv1hypXM260PKXwprh1Brag6Q2sAt95mvvaQ1XBGrlhL21Q__",
@@ -85,7 +92,8 @@ struct DoctorShotUIModel {
                                                                   experience: 27,
                                                                   minPrice: 900,
                                                                   isFree: false),
-                                                DoctorShotUIModel(firstName: "Кристина",
+                                                DoctorShotUIModel(id: "4",
+                                                                  firstName: "Кристина",
                                                                   lastName: "Бардо",
                                                                   patronymic: "Алексеевна",
                                                                   avatarStringURL: "https://s3-alpha-sig.figma.com/img/2ed3/536b/709de19d6a5629092c5937b227f5c0de?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P92Is2OZVGSH8nq0yqRjaWxCXsKkqMite1Ujr892huoVqIIcwuS7t4Ka3rouRjF4WS1eUqliU43r3oxNquJAC9rZWx~WWT-uRhX0m33Ezscphnw4JnQot9ukM4OeH61~CO1nC~jDRMGoYwliZo9nwvjmQjajXbYCrR47LZsAbm17VHHAXq8XkfyF2CH1nk1TB6wB0BrlHRE7xTmAdYdrOBVKDotUvdQjQn36jgjrL2dIKfwxZpUCxCxMcW6~l~FXfpnoDpVIhDuk8L9iX~ZbCXLZ38FYZmZpgsB-9DDGXZdYhgY9q4kFhZ4HMlhvMnc3JOa2NmU~vMyYa-zpfq6dzg__",

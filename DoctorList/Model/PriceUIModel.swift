@@ -1,7 +1,7 @@
 import Foundation
 
 struct PriceUIModel {
-    let name: String?
+    let name: String
     let comment: String
     let price: Int
     

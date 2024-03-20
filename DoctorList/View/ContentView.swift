@@ -1,10 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
+        
     var body: some View {
         
             TabView {
-                MainView(viewModel: .prewiev)
+                CoordinatorView()
                 .tabItem {
                     Image(.main)
                     Text("Главная")

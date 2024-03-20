@@ -1,6 +1,7 @@
 import Foundation
 
 struct DoctorUIModel {
+    let id: String
     let specialization: String
     let firstName: String
     let lastName: String
@@ -11,7 +12,8 @@ struct DoctorUIModel {
     let comment: String?
     let isFree: Bool
     
-    init(specialization: String,
+    init(id: String,
+         specialization: String,
          firstName: String,
          lastName: String,
          patronymic: String?,
@@ -20,6 +22,7 @@ struct DoctorUIModel {
          minPrice: Int,
          comment: String?,
          isFree: Bool) {
+        self.id = id
         self.specialization = specialization
         self.firstName = firstName
         self.lastName = lastName
@@ -32,6 +35,7 @@ struct DoctorUIModel {
     }
     
     init(networkModel: User) {
+        self.id = networkModel.id
         self.specialization = ConverterNetworkModel.getSpecialization(specialization: networkModel.specialization,
                                                                       workExpirience: networkModel.workExpirience,
                                                                       advancedTraining: networkModel.advancedTraining).last ?? ""
@@ -48,7 +52,8 @@ struct DoctorUIModel {
         self.isFree = !networkModel.freeReceptionTime.isEmpty
     }
     
-    static let example = DoctorUIModel(specialization: "Педиатр",
+    static let example = DoctorUIModel(id:"1",
+                                       specialization: "Педиатр",
                                        firstName: "Дарья",
                                        lastName: "Семенова",
                                        patronymic: "Сергеевна",

@@ -1,9 +1,15 @@
-import Kingfisher
 import SwiftUI
 
 struct DoctorScreenView: View {
     
+    @EnvironmentObject private var coordinator: Coordinator
     let model: DoctorUIModel
+    let viewModel: MainViewModel
+    
+    init(model: DoctorUIModel, viewModel: MainViewModel) {
+        self.model = model
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         NavigationView {
@@ -20,9 +26,9 @@ struct DoctorScreenView: View {
             .padding()
             .background(Color.docLightgray)
             .modifyNavigation(title: model.specialization) {
-                print("Нажата кнопка назад на главном экране")
+                coordinator.pop()
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     
     var names: some View {
@@ -38,22 +44,7 @@ struct DoctorScreenView: View {
     }
     
     private var doctorAvatar: some View {
-        VStack {
-            if let urlString = model.avatarURLString,
-                let url = URL(string: urlString) {
-                KFImage.url(url)
-                    .resizable()
-                    .placeholder {
-                        Image(systemName: "person.circle")
-                            .font(.largeTitle)
-                            .foregroundColor(.docDarkgray)
-                    }
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipped()
-                    .cornerRadius(25)
-            }
-        }
+        AvatarView(urlString: model.avatarURLString)
     }
     
     private var properties: some View {
@@ -62,20 +53,25 @@ struct DoctorScreenView: View {
     
     private var priceAndComment: some View {
         VStack(alignment: .leading, spacing: 24) {
-            HStack {
-                Text("Стоимость услуг")
-                Spacer()
-                Text("от \(model.minPrice) ₽")
-            }
-            .font(.h4)
-            .padding(.horizontal, 16)
-            .frame(height: 57)
-            .background(Color.docWhite)
-            .cornerRadius(8)
-            .overlay {
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(.docGrey, lineWidth: 1)
-            }
+                HStack {
+                    Text("Стоимость услуг")
+                    Spacer()
+                    Text("от \(model.minPrice) ₽")
+                }
+                .font(.h4)
+                .foregroundColor(.docBlack)
+                .padding(.horizontal, 16)
+                .frame(height: 57)
+                .background(Color.docWhite)
+                .cornerRadius(8)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(.docGrey, lineWidth: 1)
+                }
+                .onTapGesture {
+                    let user = viewModel.getUser(id: model.id)
+                    coordinator.push(.price, user: user)
+                }
             
             if let comment = model.comment {
                 Text(comment)
@@ -95,5 +91,5 @@ struct DoctorScreenView: View {
 }
 
 #Preview {
-    DoctorScreenView(model: .example)
+    DoctorScreenView(model: .example, viewModel: .prewiev)
 }
