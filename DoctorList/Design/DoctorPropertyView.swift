@@ -16,12 +16,12 @@ struct DoctorPropertyView: View {
             if let specificDegree = propertyModel.specificDegree {
                 property(image: Image(.firstAidKit), name: specificDegree)
             }
-            if let university = propertyModel.university {
-                property(image: Image(.graduation), name: university)
+            if !propertyModel.university.isEmpty {
+                property(image: Image(.graduation), name: propertiesToString(to: propertyModel.university))
             }
             if !propertyModel.workExpirience.isEmpty
             {
-                property(image: Image(.position), name: workPositions(propertyModel.workExpirience))
+                property(image: Image(.position), name: propertiesToString(to:propertyModel.workExpirience))
             }
         }
     }
@@ -36,17 +36,16 @@ struct DoctorPropertyView: View {
         .foregroundColor(.docDarkgray)
     }
     
-    private func workPositions(_ workExpirience:[String]) -> String {
-        var workPosition = ""
-        for i in 0..<workExpirience.count {
-            if i < workExpirience.count - 1 {
-                workPosition += workExpirience[i] + ", "
+    private func propertiesToString(to properties:[String]) -> String {
+        var propertyString = ""
+        for i in 0..<properties.count {
+            if i < properties.count - 1 {
+                propertyString += properties[i] + ", "
             } else {
-                workPosition += workExpirience[i]
+                propertyString += properties[i]
             }
         }
-        
-        return workPosition
+        return propertyString
     }
 
 }

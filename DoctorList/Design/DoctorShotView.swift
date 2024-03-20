@@ -28,7 +28,8 @@ struct DoctorShotView: View {
     
     private var doctorAvatar: some View {
         VStack {
-            if let url = URL(string: doctorModel.avatarStringURL) {
+            if let urlString = doctorModel.avatarStringURL,
+               let url = URL(string: urlString) {
                 KFImage.url(url)
                     .resizable()
                     .placeholder {

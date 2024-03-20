@@ -4,13 +4,55 @@ struct DoctorShotUIModel {
     let firstName: String
     let lastName: String
     let patronymic: String
-    let avatarStringURL: String
+    let avatarStringURL: String?
     let isFavorite: Bool
     let rating: Double
-    let specilization: [String]
+    var specilization: [String]
+    
     let experience: Int
     let minPrice: Int
     let isFree: Bool
+    
+    init(firstName: String,
+         lastName: String,
+         patronymic: String,
+         avatarStringURL: String?,
+         isFavorite: Bool,
+         rating: Double,
+         specilization: [String],
+         experience: Int,
+         minPrice: Int,
+         isFree: Bool) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.patronymic = patronymic
+        self.avatarStringURL = avatarStringURL
+        self.isFavorite = isFavorite
+        self.rating = rating
+        self.specilization = specilization
+        self.experience = experience
+        self.minPrice = minPrice
+        self.isFree = isFree
+    }
+    
+    init(networkModel: User) {
+        self.firstName = networkModel.firstName
+        self.lastName = networkModel.lastName
+        self.patronymic = networkModel.patronymic
+        self.avatarStringURL = networkModel.avatar
+        self.isFavorite = networkModel.isFavorite
+        self.rating = networkModel.ratingsRating
+        self.specilization = ConverterNetworkModel.getSpecialization(specialization: networkModel.specialization,
+                                                                     workExpirience: networkModel.workExpirience, advancedTraining: networkModel.advancedTraining)
+        self.experience = networkModel.seniority
+        self.minPrice = ConverterNetworkModel.getMinPrice(text: networkModel.textChatPrice,
+                                                      video: networkModel.videoChatPrice,
+                                                      home: networkModel.homePrice,
+                                                      hospital: networkModel.hospitalPrice)
+        self.isFree = !networkModel.freeReceptionTime.isEmpty
+    }
+    
+
     
     static let example = DoctorShotUIModel(firstName: "Кирилл",
                                            lastName: "Осташков",

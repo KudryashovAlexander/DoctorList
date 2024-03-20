@@ -5,18 +5,13 @@ struct PriceUIModel {
     let comment: String
     let price: Int
     
-    static let example = PriceUIModel(name: "Видеоконсультация",
-                                      comment: "30 мин",
+    init(type: PriceType, price: Int) {
+        self.name = type.name
+        self.comment = type.comment
+        self.price = price
+    }
+    
+    static let example = PriceUIModel(type:.chat,
                                       price: 600)
     
-    static let examples: [PriceUIModel] = [ PriceUIModel(name: "Видеоконсультация",
-                                                         comment: "30 мин",
-                                                         price: 600),
-                                            PriceUIModel(name: "Чат с врачом",
-                                                         comment: "30 мин",
-                                                         price: 600),
-                                            PriceUIModel(name: "Прием в поликлинике",
-                                                         comment: "В клинике",
-                                                         price: 600)
-                                            ]
 }
