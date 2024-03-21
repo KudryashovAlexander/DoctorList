@@ -7,18 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F130AB92BA8A7590028CA99 /* DoctorShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AB82BA8A7590028CA99 /* DoctorShotView.swift */; };
+		7F130ABC2BA8AC710028CA99 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7F130ABB2BA8AC710028CA99 /* Kingfisher */; };
+		7F130ABE2BA96B240028CA99 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ABD2BA96B240028CA99 /* PriceView.swift */; };
+		7F130AC02BA970170028CA99 /* DoctorPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ABF2BA970170028CA99 /* DoctorPropertyView.swift */; };
+		7F130AC22BA97D8D0028CA99 /* DoctorPropertyUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AC12BA97D8D0028CA99 /* DoctorPropertyUIModel.swift */; };
+		7F130AC42BA97FDE0028CA99 /* PriceUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AC32BA97FDE0028CA99 /* PriceUIModel.swift */; };
+		7F130ACB2BA981AF0028CA99 /* PriceScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ACA2BA981AF0028CA99 /* PriceScreenView.swift */; };
+		7F130ACD2BA99F380028CA99 /* DoctorUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ACC2BA99F380028CA99 /* DoctorUIModel.swift */; };
+		7F130ACF2BA9A10A0028CA99 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ACE2BA9A10A0028CA99 /* SignUpButton.swift */; };
+		7F130AD22BA9A2B30028CA99 /* DoctorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD12BA9A2B30028CA99 /* DoctorScreenView.swift */; };
+		7F130AD42BA9AA740028CA99 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD32BA9AA740028CA99 /* MainViewModel.swift */; };
+		7F130AD62BA9AADC0028CA99 /* DoctorSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD52BA9AADC0028CA99 /* DoctorSort.swift */; };
+		7F130AD82BA9C8A00028CA99 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD72BA9C8A00028CA99 /* FilterView.swift */; };
+		7F130ADA2BA9F43A0028CA99 /* NavigationTitleModify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AD92BA9F43A0028CA99 /* NavigationTitleModify.swift */; };
+		7F130ADE2BAA0D570028CA99 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ADD2BAA0D570028CA99 /* Models.swift */; };
+		7F130AE02BAA10BF0028CA99 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130ADF2BAA10BF0028CA99 /* NetworkClient.swift */; };
+		7F130AE22BAA10E50028CA99 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE12BAA10E50028CA99 /* NetworkClientError.swift */; };
+		7F130AE42BAA11330028CA99 /* NetworkErrorDescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE32BAA11330028CA99 /* NetworkErrorDescriptionModel.swift */; };
+		7F130AE62BAA11610028CA99 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE52BAA11610028CA99 /* Endpoint.swift */; };
+		7F130AE82BAA11A40028CA99 /* DoctorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE72BAA11A40028CA99 /* DoctorService.swift */; };
+		7F130AEA2BAAB6D60028CA99 /* ConverterNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AE92BAAB6D60028CA99 /* ConverterNetworkModel.swift */; };
+		7F130AEE2BAAD7A20028CA99 /* PriceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AED2BAAD7A20028CA99 /* PriceType.swift */; };
+		7F130AF02BAADBA60028CA99 /* PricesUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AEF2BAADBA60028CA99 /* PricesUIModel.swift */; };
+		7F130AF22BAAF5DB0028CA99 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AF12BAAF5DB0028CA99 /* AvatarView.swift */; };
+		7F130AF42BAB17CC0028CA99 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AF32BAB17CC0028CA99 /* Coordinator.swift */; };
+		7F130AF62BAB24CF0028CA99 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F130AF52BAB24CF0028CA99 /* CoordinatorView.swift */; };
 		7F5B89002BA8442D00563979 /* DoctorListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B88FF2BA8442D00563979 /* DoctorListApp.swift */; };
 		7F5B89022BA8442D00563979 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89012BA8442D00563979 /* ContentView.swift */; };
-		7F5B89042BA8442E00563979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B89032BA8442E00563979 /* Assets.xcassets */; };
+		7F5B89042BA8442E00563979 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B89032BA8442E00563979 /* Icon.xcassets */; };
 		7F5B89072BA8442E00563979 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B89062BA8442E00563979 /* Preview Assets.xcassets */; };
+		7F5B89122BA8458800563979 /* DoctorShotUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89112BA8458800563979 /* DoctorShotUIModel.swift */; };
+		7F5B89152BA84C6A00563979 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B89142BA84C6A00563979 /* Color.xcassets */; };
+		7F5B89172BA8516300563979 /* Font_ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89162BA8516300563979 /* Font_ext..swift */; };
+		7F5B891B2BA85AF600563979 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B891A2BA85AF600563979 /* MainView.swift */; };
+		7F5B891D2BA85B0300563979 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B891C2BA85B0300563979 /* CalendarView.swift */; };
+		7F5B891F2BA85B0C00563979 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B891E2BA85B0C00563979 /* ChatView.swift */; };
+		7F5B89212BA85B1C00563979 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89202BA85B1C00563979 /* ProfileView.swift */; };
+		7F5B89292BA89C6200563979 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B89282BA89C6200563979 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F130AB82BA8A7590028CA99 /* DoctorShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorShotView.swift; sourceTree = "<group>"; };
+		7F130ABD2BA96B240028CA99 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		7F130ABF2BA970170028CA99 /* DoctorPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPropertyView.swift; sourceTree = "<group>"; };
+		7F130AC12BA97D8D0028CA99 /* DoctorPropertyUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPropertyUIModel.swift; sourceTree = "<group>"; };
+		7F130AC32BA97FDE0028CA99 /* PriceUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceUIModel.swift; sourceTree = "<group>"; };
+		7F130ACA2BA981AF0028CA99 /* PriceScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceScreenView.swift; sourceTree = "<group>"; };
+		7F130ACC2BA99F380028CA99 /* DoctorUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorUIModel.swift; sourceTree = "<group>"; };
+		7F130ACE2BA9A10A0028CA99 /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
+		7F130AD12BA9A2B30028CA99 /* DoctorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorScreenView.swift; sourceTree = "<group>"; };
+		7F130AD32BA9AA740028CA99 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7F130AD52BA9AADC0028CA99 /* DoctorSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSort.swift; sourceTree = "<group>"; };
+		7F130AD72BA9C8A00028CA99 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		7F130AD92BA9F43A0028CA99 /* NavigationTitleModify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleModify.swift; sourceTree = "<group>"; };
+		7F130ADD2BAA0D570028CA99 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7F130ADF2BAA10BF0028CA99 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		7F130AE12BAA10E50028CA99 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
+		7F130AE32BAA11330028CA99 /* NetworkErrorDescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorDescriptionModel.swift; sourceTree = "<group>"; };
+		7F130AE52BAA11610028CA99 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7F130AE72BAA11A40028CA99 /* DoctorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorService.swift; sourceTree = "<group>"; };
+		7F130AE92BAAB6D60028CA99 /* ConverterNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterNetworkModel.swift; sourceTree = "<group>"; };
+		7F130AED2BAAD7A20028CA99 /* PriceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceType.swift; sourceTree = "<group>"; };
+		7F130AEF2BAADBA60028CA99 /* PricesUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesUIModel.swift; sourceTree = "<group>"; };
+		7F130AF12BAAF5DB0028CA99 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		7F130AF32BAB17CC0028CA99 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7F130AF52BAB24CF0028CA99 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 		7F5B88FC2BA8442D00563979 /* DoctorList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5B88FF2BA8442D00563979 /* DoctorListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListApp.swift; sourceTree = "<group>"; };
 		7F5B89012BA8442D00563979 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7F5B89032BA8442E00563979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F5B89032BA8442E00563979 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
 		7F5B89062BA8442E00563979 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F5B89112BA8458800563979 /* DoctorShotUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorShotUIModel.swift; sourceTree = "<group>"; };
+		7F5B89142BA84C6A00563979 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		7F5B89162BA8516300563979 /* Font_ext..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font_ext..swift; sourceTree = "<group>"; };
+		7F5B891A2BA85AF600563979 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7F5B891C2BA85B0300563979 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		7F5B891E2BA85B0C00563979 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		7F5B89202BA85B1C00563979 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7F5B89282BA89C6200563979 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +93,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F130ABC2BA8AC710028CA99 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F130AC52BA980E20028CA99 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7F130AD32BA9AA740028CA99 /* MainViewModel.swift */,
+				7F5B891A2BA85AF600563979 /* MainView.swift */,
+				7F130AB82BA8A7590028CA99 /* DoctorShotView.swift */,
+				7F130AD02BA9A2890028CA99 /* DoctorScreen */,
+				7F130AC92BA981470028CA99 /* PriceScreen */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F130AC62BA980EB0028CA99 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B891C2BA85B0300563979 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		7F130AC72BA980F30028CA99 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B891E2BA85B0C00563979 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		7F130AC82BA980F90028CA99 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B89202BA85B1C00563979 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7F130AC92BA981470028CA99 /* PriceScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7F130ACA2BA981AF0028CA99 /* PriceScreenView.swift */,
+			);
+			path = PriceScreen;
+			sourceTree = "<group>";
+		};
+		7F130AD02BA9A2890028CA99 /* DoctorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7F130AD12BA9A2B30028CA99 /* DoctorScreenView.swift */,
+				7F130ABF2BA970170028CA99 /* DoctorPropertyView.swift */,
+			);
+			path = DoctorScreen;
+			sourceTree = "<group>";
+		};
+		7F130ADB2BAA0C500028CA99 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F130ADC2BAA0C6B0028CA99 /* model */,
+				7F130AE52BAA11610028CA99 /* Endpoint.swift */,
+				7F130ADF2BAA10BF0028CA99 /* NetworkClient.swift */,
+				7F130AE12BAA10E50028CA99 /* NetworkClientError.swift */,
+				7F130AE32BAA11330028CA99 /* NetworkErrorDescriptionModel.swift */,
+				7F130AE72BAA11A40028CA99 /* DoctorService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7F130ADC2BAA0C6B0028CA99 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7F130ADD2BAA0D570028CA99 /* Models.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		7F5B88F32BA8442D00563979 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +193,12 @@
 		7F5B88FE2BA8442D00563979 /* DoctorList */ = {
 			isa = PBXGroup;
 			children = (
+				7F5B89102BA8446800563979 /* Service */,
+				7F5B890D2BA8444000563979 /* Model */,
+				7F5B890F2BA8445900563979 /* View */,
+				7F5B890E2BA8444C00563979 /* ViewModel */,
 				7F5B88FF2BA8442D00563979 /* DoctorListApp.swift */,
-				7F5B89012BA8442D00563979 /* ContentView.swift */,
-				7F5B89032BA8442E00563979 /* Assets.xcassets */,
+				7F5B89132BA84C3700563979 /* Design */,
 				7F5B89052BA8442E00563979 /* Preview Content */,
 			);
 			path = DoctorList;
@@ -65,6 +210,66 @@
 				7F5B89062BA8442E00563979 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F5B890D2BA8444000563979 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B89112BA8458800563979 /* DoctorShotUIModel.swift */,
+				7F130AC12BA97D8D0028CA99 /* DoctorPropertyUIModel.swift */,
+				7F130AC32BA97FDE0028CA99 /* PriceUIModel.swift */,
+				7F130ACC2BA99F380028CA99 /* DoctorUIModel.swift */,
+				7F130AD52BA9AADC0028CA99 /* DoctorSort.swift */,
+				7F130AED2BAAD7A20028CA99 /* PriceType.swift */,
+				7F130AEF2BAADBA60028CA99 /* PricesUIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F5B890E2BA8444C00563979 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F5B890F2BA8445900563979 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B89012BA8442D00563979 /* ContentView.swift */,
+				7F130AF32BAB17CC0028CA99 /* Coordinator.swift */,
+				7F130AF52BAB24CF0028CA99 /* CoordinatorView.swift */,
+				7F130AC52BA980E20028CA99 /* Main */,
+				7F130AC62BA980EB0028CA99 /* Calendar */,
+				7F130AC72BA980F30028CA99 /* Chat */,
+				7F130AC82BA980F90028CA99 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F5B89102BA8446800563979 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7F130ADB2BAA0C500028CA99 /* Network */,
+				7F130AE92BAAB6D60028CA99 /* ConverterNetworkModel.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7F5B89132BA84C3700563979 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B89032BA8442E00563979 /* Icon.xcassets */,
+				7F5B89142BA84C6A00563979 /* Color.xcassets */,
+				7F5B89162BA8516300563979 /* Font_ext..swift */,
+				7F5B89282BA89C6200563979 /* RatingView.swift */,
+				7F130ABD2BA96B240028CA99 /* PriceView.swift */,
+				7F130ACE2BA9A10A0028CA99 /* SignUpButton.swift */,
+				7F130AD72BA9C8A00028CA99 /* FilterView.swift */,
+				7F130AD92BA9F43A0028CA99 /* NavigationTitleModify.swift */,
+				7F130AF12BAAF5DB0028CA99 /* AvatarView.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +288,9 @@
 			dependencies = (
 			);
 			name = DoctorList;
+			packageProductDependencies = (
+				7F130ABB2BA8AC710028CA99 /* Kingfisher */,
+			);
 			productName = DoctorList;
 			productReference = 7F5B88FC2BA8442D00563979 /* DoctorList.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +319,9 @@
 				Base,
 			);
 			mainGroup = 7F5B88F32BA8442D00563979;
+			packageReferences = (
+				7F130ABA2BA8AC710028CA99 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7F5B88FD2BA8442D00563979 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +337,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5B89072BA8442E00563979 /* Preview Assets.xcassets in Resources */,
-				7F5B89042BA8442E00563979 /* Assets.xcassets in Resources */,
+				7F5B89042BA8442E00563979 /* Icon.xcassets in Resources */,
+				7F5B89152BA84C6A00563979 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +349,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5B89212BA85B1C00563979 /* ProfileView.swift in Sources */,
+				7F130AF02BAADBA60028CA99 /* PricesUIModel.swift in Sources */,
+				7F130ADE2BAA0D570028CA99 /* Models.swift in Sources */,
+				7F130AE22BAA10E50028CA99 /* NetworkClientError.swift in Sources */,
+				7F5B89122BA8458800563979 /* DoctorShotUIModel.swift in Sources */,
+				7F5B89292BA89C6200563979 /* RatingView.swift in Sources */,
+				7F130AE42BAA11330028CA99 /* NetworkErrorDescriptionModel.swift in Sources */,
+				7F130AD82BA9C8A00028CA99 /* FilterView.swift in Sources */,
+				7F130AEA2BAAB6D60028CA99 /* ConverterNetworkModel.swift in Sources */,
+				7F130AC22BA97D8D0028CA99 /* DoctorPropertyUIModel.swift in Sources */,
+				7F130AB92BA8A7590028CA99 /* DoctorShotView.swift in Sources */,
+				7F130AD22BA9A2B30028CA99 /* DoctorScreenView.swift in Sources */,
+				7F130AE62BAA11610028CA99 /* Endpoint.swift in Sources */,
+				7F130ADA2BA9F43A0028CA99 /* NavigationTitleModify.swift in Sources */,
+				7F130AEE2BAAD7A20028CA99 /* PriceType.swift in Sources */,
 				7F5B89022BA8442D00563979 /* ContentView.swift in Sources */,
+				7F5B891D2BA85B0300563979 /* CalendarView.swift in Sources */,
+				7F130AF42BAB17CC0028CA99 /* Coordinator.swift in Sources */,
+				7F130AE82BAA11A40028CA99 /* DoctorService.swift in Sources */,
+				7F130ABE2BA96B240028CA99 /* PriceView.swift in Sources */,
+				7F130AE02BAA10BF0028CA99 /* NetworkClient.swift in Sources */,
+				7F130AF62BAB24CF0028CA99 /* CoordinatorView.swift in Sources */,
+				7F130AC42BA97FDE0028CA99 /* PriceUIModel.swift in Sources */,
+				7F130AF22BAAF5DB0028CA99 /* AvatarView.swift in Sources */,
+				7F130AC02BA970170028CA99 /* DoctorPropertyView.swift in Sources */,
 				7F5B89002BA8442D00563979 /* DoctorListApp.swift in Sources */,
+				7F130ACD2BA99F380028CA99 /* DoctorUIModel.swift in Sources */,
+				7F5B891F2BA85B0C00563979 /* ChatView.swift in Sources */,
+				7F130ACB2BA981AF0028CA99 /* PriceScreenView.swift in Sources */,
+				7F5B891B2BA85AF600563979 /* MainView.swift in Sources */,
+				7F130AD62BA9AADC0028CA99 /* DoctorSort.swift in Sources */,
+				7F5B89172BA8516300563979 /* Font_ext..swift in Sources */,
+				7F130ACF2BA9A10A0028CA99 /* SignUpButton.swift in Sources */,
+				7F130AD42BA9AA740028CA99 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +522,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +531,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.alexander.kudryashov.DoctorList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +555,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +564,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.alexander.kudryashov.DoctorList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F130ABA2BA8AC710028CA99 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F130ABB2BA8AC710028CA99 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F130ABA2BA8AC710028CA99 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F5B88F42BA8442D00563979 /* Project object */;
 }
