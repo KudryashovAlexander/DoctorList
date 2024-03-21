@@ -6,7 +6,7 @@ DoctorList - это мини-приложение для запроса и по�
 
 # Работа приложения
 
- <img src="https://github.com/KudryashovAlexander/DoctorList/assets/42520208/e5a1600c-2fb3-4c5e-9d47-90eb8f9a23b0" width="25%" />
+ <img src="https://github.com/KudryashovAlexander/DoctorList/assets/42520208/f28a681c-63f4-40cc-bf2e-4cdc83fb4451"/>
  
 # Назначение и цели приложения
 
